@@ -1,0 +1,84 @@
+/* body {
+    background-color: #100725;
+}
+.spotify-embed {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+h1{
+    text-align: center;     
+    color: white;
+}
+.a-f p{
+    color: white;
+    font-size: 20px;
+}
+.a-f{
+    background-image: url('../img/gatos-fondo.jpg');
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+} */
+ /* 1. Fondo para TODA la página */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif; /* O la que prefieras */
+    background-image: url('../img/gatos-fondo.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: white;
+    
+    /* Centramos todo el contenido verticalmente */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+h1 {
+    text-align: center;
+    margin: 30px 0;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+}
+
+/* 2. Contenedor de Spotify */
+.spotify-embed {
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column; /* Cambiado a column para que el h2 no se rompa */
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.spotify-embed h2 {
+    font-size: 1rem;
+    margin-top: 10px;
+    opacity: 0.8;
+    color: purple;
+}
+
+/* 3. Sección de texto corregida */
+.a-f {
+    width: 90%;
+    max-width: 700px;
+    /* Quitamos el background-image de aquí para que no se repita */
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro transparente para leer mejor */
+    padding: 20px;
+    border-radius: 15px;
+    backdrop-filter: blur(5px); /* Efecto de desenfoque muy lindo */
+    margin-bottom: 50px;
+    box-sizing: border-box;
+}
+
+.a-f p {
+    font-size: 20px;
+    line-height: 1.6;
+    text-align: center;
+    margin: 0;
+}
